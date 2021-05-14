@@ -271,6 +271,10 @@ img {
     font-weight: 600;
 }
 
+.section.hide{
+    display: none;
+}
+
 
 
 .header {
@@ -350,6 +354,37 @@ img {
     opacity: 0;
     visibility: hidden;
     overflow-y: auto;
+}
+
+.fade-out-effect {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.fade-out-effect.active{
+    visibility: visible;
+    z-index: 1000;
+    animation: fadeOut 0.3s ease-out;
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.nav-menu.open {
+    visibility: visible;
+    opacity: 1;
+    z-index: 999;
+    transition: all 0.3s ease;
 }
 
 .nav-menu .close-nav-menu {

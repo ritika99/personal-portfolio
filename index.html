@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./css/color-1.css">
+    <link rel="stylesheet" type="text/css" href="./css/style-switcher.css">
 </head>
 <body>
     <!-- header start -->
@@ -30,20 +31,21 @@
         <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
         <div class="nav-menu-inner">
             <ul>
-                <li><a href="#" class="inner-shadow active">Home</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">About</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">Services</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">Portfolio</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">Internships</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">Contact</a></li>
+                <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
+                <li><a href="#about" class="link-item outer-shadow hover-in-shadow">About</a></li>
+                <li><a href="#services" class="link-item outer-shadow hover-in-shadow">Services</a></li>
+                <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Portfolio</a></li>
+                <li><a href="#internships" class="link-item outer-shadow hover-in-shadow">Internships</a></li>
+                <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
             </ul>
         </div>
         <p class="copyright-text">&copy; 2021 Ritika Dhiman</p>
     </nav>
+    <div class="fade-out-effect"></div>
     <!-- navigation menu end -->
 
     <!-- home section start-->
-    <section class="home-section section">
+    <section class="home-section section active" id="home">
         <div class="effect-wrap">
             <div class="effect effect-1"></div>
             <div class="effect effect-2">
@@ -60,7 +62,7 @@
                     <p>Hello</p>
                     <h2>I'm Ritika Dhiman</h2>
                     <h1>Web Developer & Machine Learning Enthusiast</h1>
-                    <a href="#" class="btn-1 outer-shadow hover-in-shadow">More About Me</a>
+                    <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
                 </div>
                 <div class="home-img">
                     <div class="img-box inner-shadow">
@@ -73,7 +75,7 @@
     <!-- home section end-->
 
     <!-- about section start-->
-    <section class="about-section section">
+    <section class="about-section section" id="about">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -96,7 +98,7 @@
                 <div class="about-info">
                     <p><span>Hi! My name is Ritika Dhiman. I am a Full Stack Developer.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut repudiandae alias asperiores iure eius commodi odit porro, repellendus facere consequuntur nulla ut quae perferendis similique deleniti corporis magnam maxime magni!</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos quae quisquam natus excepturi dignissimos quidem. Debitis ipsum soluta repellat, sit dolores, consequatur nihil totam eos optio, doloremque impedit facilis iusto?</p>
-                    <a href="#" class="btn-1 outer-shadow hover-in-shadow">Hire me</a>
+                    <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire me</a>
                     <a href="#" class="btn-1 outer-shadow hover-in-shadow">Download My CV</a>
                 </div>
             </div>
@@ -224,7 +226,7 @@
     <!-- about section end-->
 
     <!-- portfolio section start-->
-    <section class="portfolio-section section">
+    <section class="portfolio-section section" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -365,7 +367,7 @@
     <!-- portfolio section start-->
 
     <!-- contact section start-->
-    <section class="contact-section section">
+    <section class="contact-section section" id="contact">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -415,6 +417,24 @@
         </div>
     </section>
     <!-- contact section end-->
+
+    <div class="style-switcher outer-shadow">
+        <div class="style-toggler s-icon outer-shadow hover-in-shadow">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon outer-shadow hover-in-shadow">
+            <i class="fas fa-moon"></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-1" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-1" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-1" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-1" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
 
 <script src="./js/main.js"></script>
 </body>
