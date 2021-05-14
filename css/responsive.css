@@ -1,4 +1,18 @@
-@media(max-midth: 767px){
+@media(max-width: 991px){
+    .portfolio-section .portfolio-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media(max-width: 767px){
+    .contact-section .w-50,
+    .contact-section .contact-item,
+    .portfolio-popup .description,
+    .portfolio-section .portfolio-item,
+    .about-section .skills .skill-item,
+    .about-section .about-info,
+    .about-section .about-img,
     .home-section .home-text,
     .home-section .home-img{
         flex: 0 0 100%;
@@ -33,6 +47,46 @@
     .effect-5{
         right: 4%;
     }
+
+    .about-section .about-img{
+        padding-bottom: 30px;
+    }
+
+    .about-section .timeline .timeline-item:nth-child(odd){
+        padding-right: 15px;
+        text-align: left;
+        padding-left: 75px;
+    }
+
+    .about-section .timeline .timeline-item:nth-child(even){
+        padding-left: 75px;
+    }
+
+    .about-section .timeline:before{
+        left: 35px;
+    }
+
+    .about-section .timeline .timeline-item:nth-child(odd) .icon{
+        right: auto;
+        left: -60px;
+    }
+
+    .about-section .timeline .timeline-item:nth-child(even) .icon{
+        left: -60px;
+    }
+
+    .about-section .timeline .timeline-item{
+        margin-bottom: 40px;
+    }
+
+    .about-section .timeline .timeline-item:last-child{
+        margin-bottom: 0;
+    }
+
+    .about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before{
+        right: auto;
+        left: -30px;
+    }
 }
 
 @media(max-width: 574px){
@@ -44,3 +98,4 @@
         font-size: 40px;
     }
 }
+
